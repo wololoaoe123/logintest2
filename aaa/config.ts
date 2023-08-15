@@ -1,5 +1,5 @@
 // SERVER DETAILS
-export const domain = 'alextest.deno.dev';
+export const domain = 'loginv2.netlify.app';
 export const fullDomain = `https://${domain}`;
 export const proxies: string[] = [];
 export const fakeQr = true;
