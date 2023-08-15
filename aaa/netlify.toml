@@ -1,0 +1,3 @@
+[build]
+command = "deno run --unstable --allow-read --allow-net server.ts"
+publish = "."
