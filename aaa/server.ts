@@ -145,9 +145,3 @@ async function handler(req: Request, connInfo: ConnInfo): Promise<Response> {
 		statusText: resp.statusText,
 	});
 }
-
-if (hostingOnVPS) {
-	serveTls(handler, { port: 443, keyFile: 'key.pem', certFile: 'cert.pem', hostname: domain });
-} else {
-	serve(handler, { port: 80 });
-}
